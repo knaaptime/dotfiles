@@ -44,7 +44,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias la="ls -laF --color=auto"
     # List only directories
     alias lsd="ls -lF --color=auto | grep --color=never '^d'"
-    alias ls="ls --color=auto"
+    alias ls="command ls --color=auto"
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
