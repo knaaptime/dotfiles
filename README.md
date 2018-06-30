@@ -1,4 +1,4 @@
-# [Cătălin](https://github.com/alrra)’s dotfiles
+# [eli](https://github.com/knaaptime)’s dotfiles
 
 These are the base dotfiles that I start with when I set up a
 new environment. For more specific local needs I use the `.local`
@@ -12,10 +12,10 @@ terminal:
 (:warning: **DO NOT** run the `setup` snippet if you don't fully
 understand [what it does](src/os/setup.sh). Seriously, **DON'T**!)
 
-| OS | Snippet |
-|:---|:---|
-| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/alrra/dotfiles/master/src/os/setup.sh)"` |
-| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/alrra/dotfiles/master/src/os/setup.sh)"` |
+| OS       | Snippet                                                                                    |
+|:---------|:-------------------------------------------------------------------------------------------|
+| `macOS`  | `bash -c "$(curl -LsS https://raw.github.com/knaaptime/dotfiles/master/src/os/setup.sh)"`  |
+| `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/knaaptime/dotfiles/master/src/os/setup.sh)"` |
 
 That's it! :sparkles:
 
@@ -171,8 +171,8 @@ such as the `git` user credentials, e.g.:
 
 [user]
 
-    name = Cătălin Mariș
-    email = alrra@example.com
+    name = eli knaap
+    email = knaap@example.com
     signingkey = XXXXXXXX
 ```
 
@@ -200,6 +200,9 @@ Inspiration and code was taken from many sources, including:
 
 * [Mathias Bynens'](https://github.com/mathiasbynens)
   [dotfiles](https://github.com/mathiasbynens/dotfiles)
+  
+ and, obviously, this is a fork of [Cătălin](https://github.com/alrra)’s
+ original. She did 100% of the heavy lifting.
 
 ## License
 
