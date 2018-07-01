@@ -22,6 +22,7 @@ alias q="exit"
 alias rm="rm -rf --"
 alias t="tmux"
 alias y="yarn"
+alias reload="exec $SHELL -l"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
