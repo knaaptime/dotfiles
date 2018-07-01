@@ -29,6 +29,9 @@ create_symlinks() {
 
         "vim/vim"
         "vim/vimrc"
+        
+        "gpg/gpg-agent.conf"
+        "gpg/gpg.conf"
 
     )
 
