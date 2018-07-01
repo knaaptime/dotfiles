@@ -1,4 +1,4 @@
-[alias]
+  [alias]
 
     a   = commit --amend
     br  = branch
