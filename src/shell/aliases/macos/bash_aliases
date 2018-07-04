@@ -60,9 +60,11 @@ alias o="open"
 alias u="sudo softwareupdate --install --all \
             && brew update \
             && brew upgrade \
-            && brew cleanup \
+            && brew cask upgrade \
+            && brew cleanup; brew cask cleanup \
             && npm install -g npm \
-            && npm update -g"
+            && npm update -g \
+            && apm upgrade --no-confirm"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -76,7 +78,7 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cask upgrade; brew cleanup; brew cask cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; apm upgrade --no-confirm'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
