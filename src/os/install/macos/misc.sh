@@ -7,7 +7,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 print_in_purple "\n   Miscellaneous\n\n"
-
+brew_install "jasper netcdf"
+brew_install "gdal2 --with-armadillo --with-complete --with-libkml --with-unsupported" "osgeo/osgeo4mac"
 brew_install "R" "r"
 brew_install "Spectacle" "spectacle" "caskroom/cask" "cask"
 brew_install "Transmission" "transmission" "caskroom/cask" "cask"
