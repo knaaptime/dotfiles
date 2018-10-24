@@ -12,7 +12,7 @@ main() {
 
 filename="$HOME/Downloads/anaconda.sh"
     
-    execute "wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.sh -O $filename"\n
+    wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.sh -O $filename
     execute "sudo chmod 755 $filename"
     execute "bash $filename -b -p $HOME/anaconda"
 
