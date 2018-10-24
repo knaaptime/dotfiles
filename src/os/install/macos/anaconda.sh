@@ -10,10 +10,11 @@ main() {
 
     print_in_purple "\n   Anaconda\n\n"
 
-filename=$HOME/Downloads/anaconda.sh # note the absence of the space between '=' and '"'
+filename="$HOME/Downloads/anaconda.sh"
     
-    execute "wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.sh -O $filename"
-    execute "sudo chmod 755 $filename && bash $filename -b -p $HOME/anaconda"
+    execute "wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.sh -O $filename"\n
+    execute "sudo chmod 755 $filename"
+    execute "bash $filename -b -p $HOME/anaconda"
 
 }
 
