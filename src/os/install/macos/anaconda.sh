@@ -4,7 +4,31 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
     && . "../../utils.sh" \
     && . "./utils.sh"
 
+    declare -r LOCAL_SHELL_CONFIG_FILE="$HOME/.bash.local"
+
 # - - - - - - - -
+
+add_anaconda_configs() {
+
+    declare -r CONFIGS="
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+export PATH=\"$HOME/anaconda/bin:$PATH\"
+
+
+"
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    execute \
+        "printf '%s' '$CONFIGS' >> $LOCAL_SHELL_CONFIG_FILE \
+            && . $LOCAL_SHELL_CONFIG_FILE" \
+        "anaconda (update $LOCAL_SHELL_CONFIG_FILE)" \
+        && add_anaconda_configs
+
+}
+
 
 main() {
 
