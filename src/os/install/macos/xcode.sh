@@ -6,6 +6,12 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
+are_xcode_command_line_tools_installed() {
+    xcode-select --print-path &> /dev/null
+}
+
+
+
 install_xcode_command_line_tools() {
 
     # If necessary, prompt user to install
@@ -24,6 +30,9 @@ install_xcode_command_line_tools() {
         "Xcode Command Line Tools"
 
 }
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 main() {
 
