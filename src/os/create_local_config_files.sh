@@ -12,7 +12,8 @@ create_bash_local() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     if [ ! -e "$FILE_PATH" ] || [ -z "$FILE_PATH" ]; then
-        printf "%s\n\n" "#!/bin/bash" >> "$FILE_PATH"
+        printf "%s\n\n" "#!/bin/bash\n" \
+        "export PATH='$HOME/anaconda/bin:/usr/local/opt/llvm/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH'">> "$FILE_PATH"
     fi
 
     print_result $? "$FILE_PATH"
