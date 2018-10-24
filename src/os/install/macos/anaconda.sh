@@ -10,9 +10,9 @@ main() {
 
     print_in_purple "\n   Anaconda\n\n"
 
-    wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.sh -O ~/anaconda.sh
-    sudo chmod +x ~/anaconda.sh
-    bash ~/anaconda.sh -b -p $HOME/anaconda
+    wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.sh -O $HOME/Downloads/anaconda.sh
+    sudo chmod +x $HOME/Downloads/anaconda.sh
+    bash $HOME/Downloads/anaconda.sh -b -p $HOME/anaconda
 
 }
 
