@@ -131,7 +131,7 @@ ppi() {
     declare query="${1:-*.jpg}"
     declare geometry="${2:-50%}"
 
-    for i in "$query"; do
+    for i in $query; do
         imgName="${i%.*}.png"
         convert "$i" \
             -colorspace RGB \
