@@ -202,7 +202,7 @@ Inspiration and code was taken from many sources, including:
   [dotfiles](https://github.com/mathiasbynens/dotfiles)
   
  and, obviously, this is a fork of [Cătălin](https://github.com/alrra)’s
- original. She did 100% of the heavy lifting.
+ original. He did 100% of the heavy lifting.
 
 ## License
 
