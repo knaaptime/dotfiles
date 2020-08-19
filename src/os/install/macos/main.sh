@@ -10,7 +10,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./homebrew.sh
 ./bash.sh
 ./../nvm.sh
-./anaconda.sh
 
 ./browsers.sh
 ./compression_tools.sh
@@ -22,5 +21,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./../npm.sh
 ./tmux.sh
 ./../vim.sh
+./anaconda.sh
 
 ./cleanup.sh
